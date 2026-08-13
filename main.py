@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 from collections import defaultdict
 
-
+print("Starting duplicate file finder...")
 def file_hash(filepath, chunk_size=1024 * 1024):
     """Return SHA-256 hash of a file without loading the whole file into memory."""
     sha256 = hashlib.sha256()
